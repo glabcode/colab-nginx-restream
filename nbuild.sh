@@ -5,8 +5,8 @@
 --conf-path=/nginx/nginx.conf                     \
 --pid-path=/var/run/nginx.pid                     \
 --lock-path=/var/run/nginx.lock                   \
---error-log-path=/nginx/logs/error.log            \
---http-log-path=/nginx/logs/access.log            \
+--error-log-path=/var/log/nginx/logs/error.log    \
+--http-log-path=/var/log/nginx/logs/access.log    \
 --with-pcre                                       \
 --with-threads                                    \
 --with-file-aio                                   \
@@ -34,4 +34,5 @@
 --with-stream_ssl_module                          \
 --with-stream_realip_module                       \
 --with-stream_geoip_module                        \
---with-ld-opt="-Wl,-rpath,/usr/local/lib/"
+--with-ld-opt="-Wl,-rpath,/usr/local/lib/"        \
+--add-module=/tmp/mods/rtmp
