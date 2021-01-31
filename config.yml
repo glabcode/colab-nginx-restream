@@ -1,0 +1,12 @@
+authtoken: RPLXXXXXX
+region: eu
+tunnels:
+  ssh:
+    addr: 22
+    proto: tcp
+  web:
+    addr: 80
+    proto: http
+  ssd:
+    addr: 8080
+    proto: tcp
